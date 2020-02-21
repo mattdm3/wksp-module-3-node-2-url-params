@@ -1,0 +1,74 @@
+
+$primary-color: #111524;
+$accent-color: #162FC7;
+
+.book-body {
+    background-color: white;
+}
+
+.book-container {
+    display:flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 80px auto;
+}
+
+.book-image {
+    img{
+        width: 320px; 
+        margin: 20px;
+    }
+}
+
+.book-info {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 300px;
+
+    h4 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $accent-color;
+        font-weight: 700;
+        letter-spacing: .5px;
+    }
+
+    h1{
+        color: $primary-color;
+        font-weight: 900;
+        font-size: 4.5rem;
+        padding: 10px 0;
+
+
+    }
+    h3 {
+        color: $primary-color;
+        font-weight: 200;
+    }
+
+    p {
+        overflow: hidden;
+        color: $primary-color;
+        font-size: 15px;
+
+    }
+    
+
+    button {
+        width: 50%;
+        height: 60px;
+        border-radius: 50px;
+        color:white;
+        background-color: $accent-color;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        
+        
+    }
+
+}
+
+

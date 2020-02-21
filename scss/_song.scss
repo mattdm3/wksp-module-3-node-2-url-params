@@ -1,0 +1,32 @@
+.song-list {
+    margin: 10px 20px;
+    display: flex;
+    border-bottom: 1px rgb(65, 63, 63) solid;
+}
+
+.song-num {
+    display: flex;
+    flex-direction: column;
+    p{
+        font-size: 60px;
+    }
+    span {
+        color: rgb(133, 131, 131);
+        font-size: 15px;
+        margin-bottom: 10px;
+        
+    }
+}
+
+.song-info{
+    padding-left: 30px;
+    padding-top: 15px;
+    p{
+        font-style: italic;
+    }
+    span {
+        position: absolute;
+        right: 10px;
+        color: rgb(133, 131, 131);
+    }
+}

@@ -1,0 +1,16 @@
+<%- include( '../partials/header') %>
+
+<body>
+
+
+    <ul>
+
+        <% songs.forEach(song => { %>
+        <%- include('../partials/song', { song: song }) %>
+        <% }); %>
+    </ul>
+
+</body>
+
+
+<%- include( '../partials/footer') %>
