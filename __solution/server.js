@@ -13,7 +13,7 @@ const app = express();
 app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(bodyParser.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 
 // endpoints
@@ -49,7 +49,7 @@ app.get('/top50/popular-artist', (req, res) => {
             count: count
         });
     });
-    const mostPopularArtist = rankedArtists.sort((a, b) => a.count < b.count ? 1 : -1)[0].artist;    
+    const mostPopularArtist = rankedArtists.sort((a, b) => a.count < b.count ? 1 : -1)[0].artist;
 
     res.render('pages/popularArtist', {
         title: 'Most Popular Artist',
@@ -59,7 +59,7 @@ app.get('/top50/popular-artist', (req, res) => {
 
 app.get('/top50/song/:rank', (req, res) => {
     const rank = req.params.rank - 1;
-    if (top50[rank]) {    
+    if (top50[rank]) {
         res.render('pages/songPage', {
             title: `Song #${top50[rank].rank}`,
             song: top50[rank]

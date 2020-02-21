@@ -83,6 +83,233 @@ codeblock {
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
 
+.song-list {
+  margin: 10px 20px;
+  display: flex;
+  border-bottom: 1px #413f3f solid; }
+
+.song-num {
+  display: flex;
+  flex-direction: column; }
+  .song-num p {
+    font-size: 60px; }
+  .song-num span {
+    color: #858383;
+    font-size: 15px;
+    margin-bottom: 10px; }
+
+.song-info {
+  padding-left: 30px;
+  padding-top: 15px; }
+  .song-info p {
+    font-style: italic; }
+  .song-info span {
+    position: absolute;
+    right: 10px;
+    color: #858383; }
+
+.song-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75); }
+  .song-container h3 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+    margin: 15px; }
+  .song-container .muted {
+    padding: 0;
+    margin: 0;
+    color: #595959; }
+  .song-container .streams {
+    font-size: 180px;
+    color: #c7c7c7; }
+
+.book-body {
+  background-color: white; }
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 80px auto; }
+
+.book-image img {
+  width: 320px;
+  margin: 20px; }
+
+.book-info {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 300px; }
+  .book-info h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #162FC7;
+    font-weight: 700;
+    letter-spacing: .5px; }
+  .book-info h1 {
+    color: #111524;
+    font-weight: 900;
+    font-size: 4.5rem;
+    padding: 10px 0; }
+  .book-info h3 {
+    color: #111524;
+    font-weight: 200; }
+  .book-info p {
+    overflow: hidden;
+    color: #111524;
+    font-size: 15px; }
+  .book-info button {
+    width: 50%;
+    height: 60px;
+    border-radius: 50px;
+    color: white;
+    background-color: #162FC7;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer; }
+
+.genre-heading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 800; }
+
+.genre-container {
+  margin: 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .genre-container .book-cont {
+    display: flex;
+    margin: 20px 15px; }
+    .genre-container .book-cont img {
+      max-width: 120px;
+      margin: 0 10px; }
+  .genre-container .genre-book-text {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+    justify-content: space-between; }
+    .genre-container .genre-book-text h3 {
+      color: #111524;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 5px;
+      padding: 0; }
+    .genre-container .genre-book-text h4 {
+      color: #111524;
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 25px; }
+    .genre-container .genre-book-text p {
+      text-overflow: ellipsis;
+      font-size: 12px;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+    .genre-container .genre-book-text a {
+      color: white;
+      font-weight: 700;
+      font-size: 10px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 4;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto";
+      display: block; }
+    .genre-container .genre-book-text .button {
+      width: 40%;
+      height: 40px;
+      border-radius: 50px;
+      color: white;
+      background-color: #162FC7;
+      font-weight: 700;
+      font-size: 10px;
+      cursor: pointer; }
+
+.menu
+.genre-heading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 800; }
+
+.books-container {
+  margin: 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .books-container .book-cont {
+    display: flex;
+    margin: 20px 15px; }
+    .books-container .book-cont img {
+      max-width: 120px;
+      margin: 0 10px; }
+  .books-container .genre-book-text {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+    justify-content: space-between; }
+    .books-container .genre-book-text h3 {
+      color: #111524;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 5px;
+      padding: 0; }
+    .books-container .genre-book-text h4 {
+      color: #111524;
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 25px; }
+    .books-container .genre-book-text p {
+      text-overflow: ellipsis;
+      font-size: 12px;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+    .books-container .genre-book-text a {
+      color: white;
+      font-weight: 700;
+      font-size: 10px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 4;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto";
+      display: block; }
+    .books-container .genre-book-text .button {
+      width: 40%;
+      height: 40px;
+      border-radius: 50px;
+      color: white;
+      background-color: #162FC7;
+      font-weight: 700;
+      font-size: 10px;
+      cursor: pointer; }
+
 body {
   background: #fafafa;
   display: flex;

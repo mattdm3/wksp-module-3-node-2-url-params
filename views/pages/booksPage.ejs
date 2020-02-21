@@ -1,0 +1,43 @@
+<%- include( '../partials/bookHeader') %>
+
+<body>
+
+    <div class="books-container">
+
+        <% books.forEach(book => {%>
+
+        <div class="book-cont">
+            <img src="<%=book.imgUrl%>" alt="">
+
+            <div class="genre-book-text">
+
+                <div class="title-author">
+                    <h3><%=book.title%></h3>
+                    <h4><%=book.author%></h4>
+                    <p><%=book.description%></p>
+                </div>
+
+                <div class="button">
+                    <a href="/booksPage/<%=book.id%>">More Info</a>
+                </div>
+
+            </div>
+        </div>
+        <%  }) %>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+<%- include( '../partials/footer') %>

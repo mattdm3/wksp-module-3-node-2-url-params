@@ -1,0 +1,102 @@
+.menu
+
+
+.genre-heading {
+    text-align: center;
+    margin-top: 50px; 
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.books-container{
+    margin: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+
+.book-cont {
+    display: flex;
+    margin: 20px 15px;
+
+    img{
+        max-width: 120px;
+        margin: 0 10px;
+    }
+    
+}
+
+.genre-book-text {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+    justify-content: space-between;
+//book title 
+    h3 {
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    //book author
+    h4{
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+
+
+   
+
+    p {
+       
+        text-overflow: ellipsis;
+        font-size: 12px;
+        display: -webkit-box;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+
+    }
+
+    a {
+        
+        color:white;
+        font-weight: 700;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 4;
+        text-decoration: none;
+        margin:0;
+        padding: 0;
+        font-family: "Roboto";
+        display: block;
+    }
+
+    .button {
+        width: 40%;
+        height: 40px; 
+        border-radius: 50px;
+        color:white;
+        background-color: $accent-color;
+        font-weight: 700;
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+}
+
+
+}
+
+
+
